@@ -9,6 +9,8 @@
     {% for ticket in tickets %}
         {% if ticket.submitter == 'Test user' %}
             <div>Submitter: {{ ticket.submitter }}, created at {{ ticket.created_at }}</div>
+            <div>Body: {{ticket.body}}</div>
+            <hr/>
         {% else %}
             <div style="color: red">Submitter: {{ ticket.submitter }}, created at {{ ticket.created_at }}</div>
         {% endif %}
